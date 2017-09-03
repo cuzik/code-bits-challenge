@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Home</title>
+	<link rel="stylesheet" href="_assets/_css/_styles/arta.css">
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+	<link type="text/css" rel="stylesheet" href="_assets/_css/materialize.min.css"  media="screen,projection"/>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+	<script src="_assets/_js/highlightjs-line-numbers.min.js"></script>
+</head>
+<script>
+		hljs.initHighlightingOnLoad();
+		hljs.initLineNumbersOnLoad();
+	</script>
+<style type="text/css">
+	body {
+		display: flex;
+		min-height: 100vh;
+		flex-direction: column;
+	}
+
+	main {
+		flex: 1 0 auto;
+	}
+
+	.content-code{
+		max-height: 400px;
+	}
+	td.hljs-ln-numbers {
+		text-align: center;
+		color: #ccc;
+		border-right: 1px solid #999;
+		user-select: none;
+	}
+	td.hljs-ln-code {
+		padding-left: 10px;
+	}
+</style>
+<body>
+	<headar>
+		<nav class="grey darken-4">
+			<div class="nav-wrapper">
+				<a href="#" class="brand-logo center">Code Bits</a>
+				<ul id="nav-mobile" class="right hide-on-med-and-down">
+					<li>
+						<a href="#">Page 01</a>
+					</li>
+					<li>
+						<a href="#">Page 02</a>
+					</li>
+					<li>
+						<a href="#">Page 03</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</headar>
+	<main>
+		<div class="container">
+			<div class="row">
+				<div class="col s12">
+					<div class="input-field col s3">
+						<input id="last_name" type="text">
+						<label for="last_name">Nome do Arquivo</label>
+					</div>
+					<div class="input-field col s9">
+						<button class="btn">ADICIONAR</button>
+						<button class="btn">REMUVE</button>
+						<button class="btn">ATUALIZAR</button>
+					</div>
+				</div>
+				<div class="col s12">
+					<pre><code contenteditable="true" class="content-code cpp">#include &lt;iostream&gt;
+
+int main(int argc, char *argv[]) {
+
+  /* An annoying "Hello World" example */
+  for (auto i = 0; i < 0xFFFF; i++)
+    cout << "Hello, World!" << endl;
+
+  char c = '\n';
+  unordered_map &lt;string, vector&lt;string&gt; &gt; m;
+  m["key"] = "\\\\"; // this is an error
+
+  return -2e3 + 12l;
+}</code></pre>
+				</div>
+			</div>
+			<div class="row">
+			</div>
+		</div>
+	</main>
+    
+	<footer class="page-footer grey darken-4">
+		<style type="text/css">
+			body {
+				display: flex;
+				min-height: 100vh;
+				flex-direction: column;
+			}
+			main {
+				flex: 1 0 auto;
+			}
+		</style>
+		<div class="container">
+			<div class="row">
+				<div class="col l6 s12">
+					<h5 class="white-text">Objetvo de implementação</h5>
+					<p class="grey-text text-lighten-4">...</p>
+				</div>
+				<div class="col l4 offset-l2 s12">
+					<h5 class="white-text">Provided by</h5>
+						<p>Carlos Eduardo Cuzik</p>
+				</div>
+			</div>
+		</div>
+		<div class="footer-copyright">
+			<div class="container">
+				© CarlosCuzik
+			</div>
+		</div>
+	</footer>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="_assets/_js/materialize.min.js"></script>
+</body>
+</html>
