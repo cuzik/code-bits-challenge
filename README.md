@@ -1,15 +1,15 @@
 # Desafio Code Bits
 
-##Tarefas
+##T arefas
 Enumeração das tarefas a fazer e cumpridas
 
-###A fazer
+### A fazer
 - Operações CRUD
 - Syntax Highlight Automática
 - Linhas de Código
 - Tabs
 
-###Feito
+### Feito
 - Começar
 
 ## Descrição
@@ -32,5 +32,8 @@ Ainda não completo
 ## Executando a Aplicação
 Para utilizar apenas abre o arquivo {index.html} no seu navegador predileto e divirta-se.
 
-##Plug-in de número da linha
+## Plug-in de número da linha
 - https://github.com/wcoder/highlightjs-line-numbers.js/
+
+## Layout
+- Materialize CSS
