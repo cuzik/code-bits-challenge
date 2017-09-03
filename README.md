@@ -5,12 +5,12 @@ Enumeração das tarefas a fazer e cumpridas
 
 ### A fazer
 - Operações CRUD
-- Syntax Highlight Automática
 - Linhas de Código
 - Tabs
 
 ### Feito
 - Começar
+- Syntax Highlight Automática
 
 ## Descrição
 Criar uam cópia simple do editor de código GitHub Gist.
