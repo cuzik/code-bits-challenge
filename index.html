@@ -6,38 +6,12 @@
 	<link rel="stylesheet" href="_assets/_css/_styles/arta.css">
 	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
 	<link type="text/css" rel="stylesheet" href="_assets/_css/materialize.min.css"  media="screen,projection"/>
+	<link type="text/css" rel="stylesheet" href="_assets/_css/style.css"  media="screen,projection"/>
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
 	<script src="_assets/_js/highlightjs-line-numbers.min.js"></script>
+	<script src="_assets/_js/script.js"></script>
 </head>
-<script>
-		hljs.initHighlightingOnLoad();
-		hljs.initLineNumbersOnLoad();
-	</script>
-<style type="text/css">
-	body {
-		display: flex;
-		min-height: 100vh;
-		flex-direction: column;
-	}
-
-	main {
-		flex: 1 0 auto;
-	}
-
-	.content-code{
-		max-height: 400px;
-	}
-	td.hljs-ln-numbers {
-		text-align: center;
-		color: #ccc;
-		border-right: 1px solid #999;
-		user-select: none;
-	}
-	td.hljs-ln-code {
-		padding-left: 10px;
-	}
-</style>
 <body>
 	<headar>
 		<nav class="grey darken-4">
@@ -57,53 +31,32 @@
 			</div>
 		</nav>
 	</headar>
-	<main>
-		<div class="container">
-			<div class="row">
+	<main class="grey lighten-3">
+		<div class="container grey lighten-3">
+			<div class="row blue-grey full">
 				<div class="col s12">
 					<div class="input-field col s3">
-						<input id="last_name" type="text">
-						<label for="last_name">Nome do Arquivo</label>
+						<input id="arq_name" type="text" onkeyup="identify_language();">
+						<label for="arq_name">Nome do Arquivo</label>
 					</div>
 					<div class="input-field col s9">
 						<button class="btn">ADICIONAR</button>
-						<button class="btn">REMUVE</button>
-						<button class="btn">ATUALIZAR</button>
+						<button class="btn" onclick="clean();">REMUVE</button>
+						<button class="btn" onclick="format();" >Formatar</button>
 					</div>
 				</div>
-				<div class="col s12">
-					<pre><code contenteditable="true" class="content-code cpp">#include &lt;iostream&gt;
-
-int main(int argc, char *argv[]) {
-
-  /* An annoying "Hello World" example */
-  for (auto i = 0; i < 0xFFFF; i++)
-    cout << "Hello, World!" << endl;
-
-  char c = '\n';
-  unordered_map &lt;string, vector&lt;string&gt; &gt; m;
-  m["key"] = "\\\\"; // this is an error
-
-  return -2e3 + 12l;
-}</code></pre>
+				<div class="col s12 blue-grey lighten-2">
+					<pre><code id="code-block" contenteditable="true" class="content-code ">#include &lt;iostream&gt;
+int main(){
+	return 0;
+}
+</code></pre>
 				</div>
-			</div>
-			<div class="row">
 			</div>
 		</div>
 	</main>
     
 	<footer class="page-footer grey darken-4">
-		<style type="text/css">
-			body {
-				display: flex;
-				min-height: 100vh;
-				flex-direction: column;
-			}
-			main {
-				flex: 1 0 auto;
-			}
-		</style>
 		<div class="container">
 		</div>
 		<div class="footer-copyright">
@@ -114,5 +67,9 @@ int main(int argc, char *argv[]) {
 	</footer>
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script type="text/javascript" src="_assets/_js/materialize.min.js"></script>
+	<script type="text/javascript">
+		hljs.initHighlightingOnLoad();
+		hljs.initLineNumbersOnLoad();
+	</script>
 </body>
 </html>
