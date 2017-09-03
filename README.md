@@ -1,6 +1,6 @@
 # Desafio Code Bits
 
-##T arefas
+## Tarefas
 Enumeração das tarefas a fazer e cumpridas
 
 ### A fazer
