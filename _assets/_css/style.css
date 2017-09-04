@@ -6,3 +6,6 @@ body {
 main {
 	flex: 1 0 auto;
 }
+div.block{
+	height: 330px;
+}

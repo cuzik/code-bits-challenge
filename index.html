@@ -19,7 +19,7 @@
 	<script type="text/javascript" src="_assets/_js/_mode/ruby/ruby.js"></script>
 	<script type="text/javascript" src="_assets/_js/_mode/css/css.js"></script>
 </head>
-<body>
+<body onload="init();">
 	<headar>
 		<nav class="grey darken-4">
 			<div class="nav-wrapper">
@@ -49,21 +49,12 @@
 					<div class="input-field col s9">
 						<button class="btn">ADICIONAR</button>
 						<button class="btn">REMUVE</button>
-						<button class="btn">Formatar</button>
 					</div>
 				</div>
-				<div class="col s12 blue-grey lighten-2">
-					<textarea id="code">object FilterTest extends App {
-  def filter(xs: List[Int], threshold: Int) = {
-    def process(ys: List[Int]): List[Int] =
-      if (ys.isEmpty) ys
-      else if (ys.head < threshold) ys.head :: process(ys.tail)
-      else process(ys.tail)
-    process(xs)
-  }
-  println(filter(List(1, 9, 2, 8, 3, 7, 4), 5))
+				<div id="block" class="col s12 blue-grey lighten-2 block">
+					<textarea id="code">int main(){
+	return 0;
 }</textarea>
-					<pre><code id="code"></code></pre>
 				</div>
 			</div>
 		</div>
@@ -80,14 +71,5 @@
 	</footer>
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script type="text/javascript" src="_assets/_js/materialize.min.js"></script>
-	<script type="text/javascript">
-		var codeEditor = CodeMirror.fromTextArea(document.getElementById("code"), {
-			lineNumbers: true,
-			matchBrackets: false,
-			mode: "text/x-scala"
-		});
-		var mac = CodeMirror.keyMap.default == CodeMirror.keyMap.macDefault;
-      	CodeMirror.keyMap.default[(mac ? "Cmd" : "Ctrl") + "-Space"] = "autocomplete";
-	</script>
 </body>
 </html>
