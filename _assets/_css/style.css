@@ -6,25 +6,3 @@ body {
 main {
 	flex: 1 0 auto;
 }
-
-main {
-	flex: 1 0 auto;
-}
-
-.content-code{
-	max-height: 500px;
-	min-height: 500px;
-}
-td.hljs-ln-numbers {
-	text-align: center;
-	color: #ccc;
-	border-right: 1px solid #999;
-	user-select: none;
-	width: 30px;
-}
-td.hljs-ln-code {
-	padding-left: 10px;
-}
-div.full{
-	min-height: 100%;
-}

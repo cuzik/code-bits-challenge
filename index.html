@@ -2,17 +2,22 @@
 <html lang="pr-br">
 <head>
 	<meta charset="UTF-8">
+	
 	<title>Home</title>
+	
 	<link type="text/css" rel="stylesheet" href="_assets/_css/materialize.min.css"  media="screen,projection"/>
 	<link type="text/css" rel="stylesheet" href="_assets/_css/style.css"  media="screen,projection"/>
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="http://codemirror.net/lib/codemirror.css">
+	<link rel="stylesheet" type="text/css" href="_assets/_css/codemirror.css">
+	<link rel="stylesheet" type="text/css" href="_assets/_css/show-hint.css">
 
 	<script type="text/javascript" src="http://codemirror.net/lib/codemirror.js"></script>
-	<script type="text/javascript" src="http://codemirror.net/addon/hint/show-hint.js"></script>
-	<script type="text/javascript" src="http://codemirror.net/mode/clike/clike.js"></script>
-	<!-- <script type="text/javascript" src="httphttp://codemirror.net/addon/edit/matchbrackets.js"></script> -->
 	<script src="_assets/_js/script.js"></script>
+	<script type="text/javascript" src="_assets/_js/show-hint.js"></script>
+	<script type="text/javascript" src="_assets/_js/_mode/clike/clike.js"></script>
+	<script type="text/javascript" src="_assets/_js/_mode/python/python.js"></script>
+	<script type="text/javascript" src="_assets/_js/_mode/ruby/ruby.js"></script>
+	<script type="text/javascript" src="_assets/_js/_mode/css/css.js"></script>
 </head>
 <body>
 	<headar>
@@ -35,7 +40,7 @@
 	</headar>
 	<main class="grey lighten-3">
 		<div class="container grey lighten-3">
-			<div class="row blue-grey full">
+			<div class="row blue-grey">
 				<div class="col s12">
 					<div class="input-field col s3">
 						<input id="arq_name" type="text" onkeyup="identify_language();">
@@ -48,7 +53,7 @@
 					</div>
 				</div>
 				<div class="col s12 blue-grey lighten-2">
-					<textarea id="c-code">object FilterTest extends App {
+					<textarea id="code">object FilterTest extends App {
   def filter(xs: List[Int], threshold: Int) = {
     def process(ys: List[Int]): List[Int] =
       if (ys.isEmpty) ys
@@ -58,6 +63,7 @@
   }
   println(filter(List(1, 9, 2, 8, 3, 7, 4), 5))
 }</textarea>
+					<pre><code id="code"></code></pre>
 				</div>
 			</div>
 		</div>
@@ -75,9 +81,9 @@
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script type="text/javascript" src="_assets/_js/materialize.min.js"></script>
 	<script type="text/javascript">
-		var cEditor = CodeMirror.fromTextArea(document.getElementById("c-code"), {
+		var codeEditor = CodeMirror.fromTextArea(document.getElementById("code"), {
 			lineNumbers: true,
-			matchBrackets: true,
+			matchBrackets: false,
 			mode: "text/x-scala"
 		});
 		var mac = CodeMirror.keyMap.default == CodeMirror.keyMap.macDefault;
