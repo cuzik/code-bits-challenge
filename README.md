@@ -5,12 +5,12 @@ Enumeração das tarefas a fazer e cumpridas
 
 ### A fazer
 - Operações CRUD
-- Linhas de Código
-- Tabs
 
 ### Feito
 - Começar
 - Syntax Highlight Automática
+- Linhas de Código
+- Tabs
 
 ## Descrição
 Criar uam cópia simple do editor de código GitHub Gist.
@@ -32,8 +32,6 @@ Ainda não completo
 ## Executando a Aplicação
 Para utilizar apenas abre o arquivo {index.html} no seu navegador predileto e divirta-se.
 
-## Plug-in de número da linha
-- https://github.com/wcoder/highlightjs-line-numbers.js/
-
-## Layout
-- Materialize CSS
+## Plug-in e Bibliotecas Utilizados
+- [Code Mirro](http://codemirror.net/)
+- [Materialize css](http://materializecss.com/)
