@@ -36,7 +36,7 @@
 				<a href="#" class="brand-logo center">Code Bits</a>
 				<ul id="nav-mobile" class="right hide-on-med-and-down"">
 					<li>
-						<a href="archive.php">Arquivos</a>
+						<a href="archives.php">Arquivos</a>
 					</li>
 				</ul>
 			</div>
