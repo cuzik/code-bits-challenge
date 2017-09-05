@@ -65,7 +65,7 @@
 						<?php } ?>
 					</div>
 					<div class="input-field col s9">
-						<a href="saving.php?cod_arq="<?php $COD ?> class="btn">SALVAR</a>
+						<a class="btn">SALVAR</a>
 					</div>
 				</div>
 				<div id="block" class="col s12 blue-grey lighten-2 block">

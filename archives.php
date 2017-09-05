@@ -42,7 +42,7 @@
 								<a <?php echo "href=index.php?cod_arc=".$item["cod"]; ?> class="secondary-content modal-trigger">
 									<i class="material-icons">mode_edit</i>
 								</a>
-								<a <?php echo "href=delete.php?cod_arc=".$item["cod"]; ?> class="secondary-content modal-trigger">
+								<a href="#"> class="secondary-content modal-trigger">
 									<i class="material-icons">delete_forever</i>
 								</a>
 							</div>
