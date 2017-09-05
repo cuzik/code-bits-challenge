@@ -2,10 +2,15 @@ var codeEditor;
 function init () {
 	this.codeEditor = CodeMirror.fromTextArea(document.getElementById("code"), {
 		lineNumbers: true,
+		mode: "text/x-c++src",
 		matchBrackets: true,
-		// styleActiveLine: true,
-    	// theme:"eclipse",
-		mode: lang_names["cpp"]
+		styleActiveLine: true,
+		lineWrapping: true,
+		autoCloseBrackets: true,
+		theme: 'dracula',
+		tabSize: 2,
+		keyMap: "sublime",
+		showCursorWhenSelecting: true
 	});
 	var mac = CodeMirror.keyMap.default == CodeMirror.keyMap.macDefault;
   	CodeMirror.keyMap.default[(mac ? "Cmd" : "Ctrl") + "-Space"] = "autocomplete";

@@ -10,21 +10,31 @@
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="_assets/_css/codemirror.css">
 	<link rel="stylesheet" type="text/css" href="_assets/_css/show-hint.css">
+	<link rel="stylesheet" href="_assets/_css/theme/dracula.css">
 
-	<script type="text/javascript" src="http://codemirror.net/lib/codemirror.js"></script>
+	<script src="http://codemirror.net/lib/codemirror.js"></script>
 	<script src="_assets/_js/script.js"></script>
-	<script type="text/javascript" src="_assets/_js/show-hint.js"></script>
-	<script type="text/javascript" src="_assets/_js/_mode/clike/clike.js"></script>
-	<script type="text/javascript" src="_assets/_js/_mode/python/python.js"></script>
-	<script type="text/javascript" src="_assets/_js/_mode/ruby/ruby.js"></script>
-	<script type="text/javascript" src="_assets/_js/_mode/css/css.js"></script>
+	<script src="_assets/_js/show-hint.js"></script>
+	<script src="_assets/_js/addon/search/search.js"></script>
+	<script src="_assets/_js/addon/search/searchcursor.js"></script>
+	<script src="_assets/_js/addon/dialog/dialog.js"></script>
+	<script src="_assets/_js/addon/comment/comment.js"></script>
+	<script src="_assets/_js/addon/wrap/hardwrap.js"></script>
+	<script src="_assets/_js/addon/edit/closebrackets.js"></script>
+	<script src="_assets/_js/addon/selection/active-line.js"></script>
+	<script src="_assets/_js/addon/edit/matchbrackets.js"></script>
+	<script src="_assets/_js/keymap/sublime.js"></script>
+	<script src="_assets/_js/_mode/clike/clike.js"></script>
+	<script src="_assets/_js/_mode/python/python.js"></script>
+	<script src="_assets/_js/_mode/ruby/ruby.js"></script>
+	<script src="_assets/_js/_mode/css/css.js"></script>
 </head>
 <body onload="init();">
 	<headar>
 		<nav class="grey darken-4">
 			<div class="nav-wrapper">
 				<a href="#" class="brand-logo center">Code Bits</a>
-				<ul id="nav-mobile" class="right hide-on-med-and-down" style="display: none;">
+				<ul id="nav-mobile" class="right hide-on-med-and-down"">
 					<li>
 						<a href="#">Page 01</a>
 					</li>
@@ -52,7 +62,8 @@
 				</div>
 				<div id="block" class="col s12 blue-grey lighten-2 block">
 					<textarea id="code">int main(){
-	return 0;
+	cout << "teste" << endl;
+	retunr 0;
 }</textarea>
 				</div>
 			</div>
