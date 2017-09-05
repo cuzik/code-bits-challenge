@@ -30,21 +30,26 @@
 		</nav>
 	</headar>
 	<main class="grey lighten-3">
-		<div class="row">
-			<div class="col s12">
-				<ul class="collection with-header">
-					<li class="collection-header center-align"><h4>Arquivos Salvos</h4></li>
-				<?php foreach($data as $item) { ?>
-					<li class="collection-item">
-						<div>
-							<?php echo $item["name"]; ?>
-							<a <?php echo "href=index.php?cod_arc=".$item["cod"]; ?> class="secondary-content modal-trigger">
-								<i class="material-icons">open_in_new</i>
-							</a>
-						</div>
-					</li>
-				<?php } ?>
-				</ul>
+		<div class="container">
+			<div class="row">
+				<div class="col s12">
+					<ul class="collection with-header">
+						<li class="collection-header center-align"><h4>Arquivos Salvos</h4></li>
+						<?php foreach($data as $item) { ?>
+						<li class="collection-item">
+							<div>
+								<?php echo $item["name"]; ?>
+								<a <?php echo "href=index.php?cod_arc=".$item["cod"]; ?> class="secondary-content modal-trigger">
+									<i class="material-icons">mode_edit</i>
+								</a>
+								<a <?php echo "href=delete.php?cod_arc=".$item["cod"]; ?> class="secondary-content modal-trigger">
+									<i class="material-icons">delete_forever</i>
+								</a>
+							</div>
+						</li>
+						<?php } ?>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</main>
