@@ -1,16 +1,15 @@
 # Desafio Code Bits
 
-## Tarefas
-Enumeração das tarefas a fazer e cumpridas
 
-### A fazer
-- Operações CRUD
-
-### Feito
-- Começar
-- Syntax Highlight Automática
+## Ferramentas
+- Syntax Highlight Automática pelo nome
 - Linhas de Código
 - Tabs
+- Auto-Completar
+- Destaque da linha atual
+- Comandos do sublime
+- Carregar arquivo salvo
+- 
 
 ## Descrição
 Criar uam cópia simple do editor de código GitHub Gist.
@@ -19,18 +18,19 @@ Criar uam cópia simple do editor de código GitHub Gist.
 - Carlos Eduardo Cuzik
 
 ## Instalação
-Apenas para utilizar esta ferramenta apenas faça o download do repositório e descompacte no local desejado. Ou se preferir faça o clone direto com o comando 
-
-'$ git clone https://github.com/carloscuzik/Desafio_Code_Bits.git'
+- Criação do banco de dados mysql com os scripts de criação e povoamento
+- clone do repositório pelo comando ```$ git clone https://github.com/carloscuzik/Desafio_Code_Bits.git```
 
 ## Dependências
-- Navegador instalado
+- PHP cliente instalado
+- Servidor Apache (ou outro servidor web)
+- MySql
 
 ## Testes
-Ainda não completo
+[NaN]
 
 ## Executando a Aplicação
-Para utilizar apenas abre o arquivo {index.html} no seu navegador predileto e divirta-se.
+Abra a aplicação pelo navegador.
 
 ## Plug-in e Bibliotecas Utilizados
 - [Code Mirro](http://codemirror.net/)

@@ -37,5 +37,7 @@ lang_names["py"] = "text/x-python"
 lang_names["rb"] = "text/x-ruby"
 
 function change_language (language_new) {
-	this.codeEditor.setOption("mode", lang_names[language_new]);
+	if(lang_names[language_new]!=null){
+		this.codeEditor.setOption("mode", lang_names[language_new]);
+	}
 }
