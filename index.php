@@ -36,13 +36,7 @@
 				<a href="#" class="brand-logo center">Code Bits</a>
 				<ul id="nav-mobile" class="right hide-on-med-and-down"">
 					<li>
-						<a href="#">Page 01</a>
-					</li>
-					<li>
-						<a href="#">Page 02</a>
-					</li>
-					<li>
-						<a href="#">Page 03</a>
+						<a href="archive.php">Arquivos</a>
 					</li>
 				</ul>
 			</div>
@@ -61,10 +55,7 @@
 					</div>
 				</div>
 				<div id="block" class="col s12 blue-grey lighten-2 block">
-					<textarea id="code">int main(){
-	cout << "teste" << endl;
-	retunr 0;
-}</textarea>
+					<textarea id="code"></textarea>
 				</div>
 			</div>
 		</div>
