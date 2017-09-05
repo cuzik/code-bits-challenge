@@ -30,6 +30,15 @@
 	<script src="_assets/_js/_mode/css/css.js"></script>
 </head>
 <body onload="init();">
+	<?php require_once "_includes/connection.php"; ?>
+	<?php $COD = $_GET["cod_arc"]; ?>
+	<?php
+		$data = [];
+		$result = mysqli_query($connection,'SELECT * FROM archive WHERE archive_cod = '.$COD);
+		while ($row = mysqli_fetch_array($result,2)){
+			$data[] = array("cod" => $row[0], "name" => $row[1]);
+		}
+	?>
 	<headar>
 		<nav class="grey darken-4">
 			<div class="nav-wrapper">
@@ -47,15 +56,26 @@
 			<div class="row blue-grey">
 				<div class="col s12">
 					<div class="input-field col s3">
-						<input id="arq_name" type="text" onkeyup="identify_language();">
-						<label for="arq_name">Nome do Arquivo</label>
+						<?php if($COD == NULL){ ?>
+							<input id="arq_name" type="text" onkeyup="identify_language();">
+							<label for="arq_name">Nome do Arquivo</label>
+						<?php }else{ ?>
+							<input id="arq_name" value=<?php echo($data[0]["name"]); ?> type="text" onkeyup="identify_language();">
+							<label for="arq_name">Nome do Arquivo</label>
+						<?php } ?>
 					</div>
 					<div class="input-field col s9">
-						<button class="btn">SALVAR</button>
+						<a href="saving.php?cod_arq="<?php $COD ?> class="btn">SALVAR</a>
 					</div>
 				</div>
 				<div id="block" class="col s12 blue-grey lighten-2 block">
-					<textarea id="code"></textarea>
+					<?php if($COD == NULL){ ?>
+						<textarea id="code"></textarea>
+					<?php }else{ ?>
+						<?php $fp = fopen("_files/".$data[0]['name'], "r"); ?>
+						<textarea id="code"><?php while(!feof($fp)) { $row = fgets($fp, 4096); echo $row; } ?> </textarea>
+						<?php fclose($fp); ?>
+					<?php } ?>
 				</div>
 			</div>
 		</div>

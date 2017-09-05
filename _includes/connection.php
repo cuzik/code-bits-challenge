@@ -5,7 +5,7 @@
 	    die('<p style="color: red;">Não foi possível conectar com o banco: '.mysqli_error().'</p>');
 	}
 	// echo '<p style="color: green;">Conexão bem sucedida</p>';
-	if(mysqli_select_db($connection,"TCC_SYSTEM")!=1){
+	if(mysqli_select_db($connection,"CodeBits")!=1){
 	    echo "deu ruim<br>";
 	}
 
