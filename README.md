@@ -1,38 +1,42 @@
-# Desafio Code Bits
-O objetivo do projeto é fazer uma clone simples do Github Gist.
+OBS: This was what started me as a developer. This was the first `code-challenge` I did. I still remember trying my best and thinking it was not enough, but I did it by myself, and I these are some things that happened during the coding interview:
 
-## Ferramentas
-- Syntax Highlight Automática pelo nome
-- Linhas de Código
-- Tabs
-- Auto-Completar
-- Destaque da linha atual
-- Comandos do sublime
-- Carregar arquivo salvo
+- Diogo, one of my bosses, did an SQL injection on the website (I up the server on my computer at home).
+- Some of the things on the code didn't work as expected, I don't know why :nervous:
+- Alan, another boss, at the final of the interview, turned to me and said:
+      - "What you did is ok, but we are not interested in what you know to do."
+      My head turned red (I have this problem :sad:) and I started to be more nervous than I already was before, but then Alan. After 5 minutes of silence (in my mind, it takes 1 hour)
+      - "We are interested in what you can learn."
+      I was so nervous that I couldn't understand that they were offering me an intern position, in a software house, with amazing people that became my friends.
 
-## A fazer
-- Operações CRUD
+The thing is, don't matter how you start. This code with zero tests and many security problems is not me. What is me is: I did it by myself, without knowledge, I tried hard, I learned hard, I tried to show what I did even thinking it was not enough, and I'm proud of it. But it is just me almost six years later, working with the same people, learning with the same people, and being happy to finish this project and passed by the things I described here.
 
-## Descrição
-Criar uam cópia simple do editor de código GitHub Gist.
+## Code Bits Challenge
+The main goal of this project is to clone the Github Gist.
 
-## Autor
+## Required Tools
+- syntax-highlight (should infer the language with the extension file)
+- code-line (it should be on the left)
+- tabs/spaces (it should show a unique character to tab and spaces)
+- auto-complete (based on the language)
+- highlight the current line
+- sublime text commends (yeah, sublime was the main editor at this age :old:)
+- load saved file (store the file under accounts)
+
+## to-do
+- CRUD on the files
+
+## Author
 - Carlos Eduardo Cuzik
 
-## Instalação
-- Criação do banco de dados mysql com os scripts de criação e povoamento
-- clone do repositório pelo comando ```$ git clone https://github.com/carloscuzik/Desafio_Code_Bits.git``` dentro da pasta do servidor web que irá ospedar a aplicação.
+## Dependencies
+- PHP server
+- MySql
 
-## Dependências
-- PHP server instalado
-- Servidor Apache instalado e configurado (ou outro servidor web)
-- MySql instalado e configurado
+## Tests
+Nopes hehe, sorry about that.
 
-## Testes
-Não há presença de testes unitários.
-
-## Executando a Aplicação
-Abra a aplicação pelo navegador.
+## Running
+Open the application on our board (I don't know why I wrote this running section, it is obviously, but how can I up the server?)
 
 ## Plug-in e Bibliotecas Utilizados
 - [Code Mirro](http://codemirror.net/)
